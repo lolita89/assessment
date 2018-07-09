@@ -1,0 +1,21 @@
+h1 {
+    color: blue
+}
+
+.fulltext p,
+.less {
+	display: none;
+}
+
+.fulltext:target p,
+.fulltext:target .less {
+	display: block;
+}
+
+.fulltext:target .more {
+	display: none;
+}
+
+#tittle-paragraph {
+    font-family: sans-serif
+}

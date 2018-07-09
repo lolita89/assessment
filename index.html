@@ -1,34 +1,67 @@
-<!DOCTYPE Html>
+<!DOCTYPE html>
 <html>
 
     <head>
         <title>Webenable Assessment</title>
+        <link rel="stylesheet" href="style.css">
     </head>
 
     <body>
-       <h1>Assessment</h1>
+        <div class="header">
+            <h1>Assessment</h1>
+        </div>
+       
        <ul>
            <li><a href="index.html">Home</a></li>
            <li><a href="https://github.com/lolita89/assessment">Github repo</a></li>
            <li><a href="contact.asp">Contact</a></li>
        </ul>
+       
+       <div class="column">
+
        <img src="google-earth-view-6359.jpg" alt="main picture" width="500" height="400">
-       <h2>Lorem Ipsum</h2>
-       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-           Vivamus imperdiet sollicitudin turpis, id placerat est mollis non.
-           In tempor nibh lectus, quis sagittis ante dignissim eget.
-           Nam quis turpis fringilla, venenatis dui finibus, placerat massa.
-           Proin in purus velit. Aenean quis dignissim orci.
-           Phasellus quis imperdiet magna, et auctor libero.
-           Sed id metus id nisi facilisis dapibus.
-           Maecenas tortor massa, congue eu mattis eget, cursus et felis.
-           Aenean ac egestas erat, et tincidunt sem.
-           Nullam laoreet lacus odio, non fermentum quam convallis sit amet.
-           Sed sollicitudin quam eu neque lobortis, at porta nulla rhoncus.
-           Vestibulum tincidunt luctus risus vitae viverra.
-           Suspendisse congue diam ex, ac faucibus libero finibus at.
-           Suspendisse tincidunt non justo id porttitor. Praesent ullamcorper a risus at ornare. Aliquam mattis aliquam laoreet.
+       
+       <article>
+       
+       <div id="content">
+            <h2 id="title-paragraph">Lorem Ipsum </h2>
+            <p id="paragraph-lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Vivamus imperdiet sollicitudin turpis, id placerat est mollis non.
+            In tempor nibh lectus, quis sagittis an te dignissim eget.
+            Nam quis turpis fringilla, venenatis dui finibus, placerat massa.
+            Proin in purus velit. Aenean quis dignissim orci.
+            Phasellus quis imperdiet magna, et auctor libero.
+            Sed id metus id nisi facilisis dapibus.
+            Maecenas tortor massa, congue eu mattis eget, cursus et felis.
+            Aenean ac egestas erat, et tincidunt sem.
+            Nullam laoreet lacus odio, non fermentum quam convallis sit amet.
+            Sed sollicitudin quam eu neque lobortis, at porta nulla rhoncus.
+            Vestibulum tincidunt luctus risus vitae viverra.
+            Suspendisse congue diam ex, ac faucibus libero finibus at.
+            Suspendisse tincidunt non justo id porttitor. Praesent ullamcorper a risus at ornare. Aliquam mattis aliquam laoreet.
+            <br><br>
             </p>
-    </body>
+      
+        </div>
+        </div>
+        </article>
+        
+        <script>
+            
+            var content = document.getElementById('content');
+            var title = document.getElementById('title-paragraph').innerHTML;
+            var paragraph = document.getElementById('paragraph-lorem').innerHTML;
+            
+            console.log(title);
+            console.log(content);
+            console.log(paragraph);
+
+            for (i = 0; i < 3; i++) {
+                content.innerHTML = content.innerHTML + title + "<br>" + paragraph;
+            }
     
+
+        </script>
+    </body>
+
 </html>
