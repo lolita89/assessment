@@ -4,6 +4,7 @@
     <head>
         <title>Webenable</title>
         <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
     </head>
 
     <body>
@@ -17,9 +18,11 @@
            <li><a href="contact.asp">Contact</a></li>
        </ul>
        
-       <div class="column">
+       <div class="row">
+            <div class="column middle">
 
-       <img src="google-earth-view-6359.jpg" alt="main picture" width="500" height="400">
+
+        <img src="google-earth-view-6359.jpg" alt="main picture" width="500" height="400">
        
        <article>
        
@@ -41,24 +44,16 @@
             Suspendisse tincidunt non justo id porttitor. Praesent ullamcorper a risus at ornare. Aliquam mattis aliquam laoreet.
             <br><br>
             </p>
-      
+        </div>
+            </div>
+        <div class="column side">
+                test
         </div>
         </div>
         </article>
         
-        <script>   
-            var content = document.getElementById('content');
-            var title = document.getElementById('title-paragraph').innerHTML;
-            var paragraph = document.getElementById('paragraph-lorem').innerHTML;
-            
-            console.log(title);
-            console.log(content);
-            console.log(paragraph);
+        <script type="text/javascript" src="main.js"></script>
 
-            for (i = 0; i < 3; i++) {
-                content.innerHTML = content.innerHTML + title + "<br>" + paragraph;
-            }
-        </script>
     </body>
 
 </html>
