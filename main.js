@@ -9,3 +9,12 @@
 // for (i = 0; i < 3; i++) {
 //     content.innerHTML = content.innerHTML + title + "<br>" + paragraph;
 // }
+
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
